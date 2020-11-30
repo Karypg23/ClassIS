@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding 2 Numbers</title>
+<script type="text/javascript">
+	function changeText() {
+	var text = "The sum of the 2 numbers is: "
+        var x, y ;
+
+        x = document.getElementById("number1").value;
+        y = document.getElementById("number2").value;
+
+        var z = x - -y ;
+
+		document.getElementById("message").innerHTML=(text + z);
+    }
+		
+	function clearText() {
+		document.getElementById("massage").innerHTML=("<br>");
+	    document.getElementById("number1").value = "";
+		document.getElementById("number1").value = "";
+		
+	}
+</script>
+</head>
+<body>
+<div id="main">
+   <div id="header">
+   <h1>Final Exam 2 - Palomar Karina</h1>
+   </div>
+   
+   <form id="myForm">
+      First Number to add: <input type= "text" id ="number1">
+	  <br><br>
+      Second Number to add: <input type= "text" id ="number2">
+   </form>
+   
+   <p id="demo">Output:</p>
+   <p id="message"> <br> </p>
+   
+   <button type="button" onClick="changeText()">Submit</button>
+   <button type="button" onClick="clearText()">Clear</button>
+   
+</div>
+</body>
+</html>
